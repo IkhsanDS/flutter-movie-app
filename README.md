@@ -75,7 +75,7 @@ Built using Flutter + GetX + Firebase + TMDB API.
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="lib/assets/Screensho/HOME.png" width="220">
+  <img src="lib/assets/Screenshot/HOME.png" width="220">
   <img src="lib/assets/Screenshot/FAVORITE.png" width="220">
   <img src="lib/assets/Screenshot/DETAIL.png" width="220">
 </p>
