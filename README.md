@@ -1,99 +1,106 @@
 # 🎬 Flutter Movie App
 
-A modern movie browsing application built with **Flutter**, powered by **TMDB API** and **Firebase**.
+Aplikasi pencarian dan eksplorasi film modern yang dibuat menggunakan **Flutter**, dengan dukungan **TMDB API** dan **Firebase**.
 
 ---
 
-## 📌 Overview
+## 📌 Tentang Aplikasi
 
-Flutter Movie App is a clean and scalable movie application that allows users to:
+Flutter Movie App adalah aplikasi film dengan tampilan modern dan arsitektur modular yang memungkinkan pengguna untuk:
 
-- Browse trending movies
-- Get personalized recommendations
-- View movie details & trailers
-- Save favorite movies
-- Enjoy smooth animations and modern UI
+- Melihat film trending
+- Mendapatkan rekomendasi sesuai genre pilihan
+- Mencari film
+- Melihat detail film & trailer
+- Menyimpan film favorit
+- Menikmati animasi dan UI yang clean
 
-Built using Flutter + GetX + Firebase + TMDB API.
+Dibangun menggunakan Flutter + GetX + Firebase + TMDB API.
 
 ---
 
-## ✨ Features
+## ✨ Fitur Utama
 
-### 🔐 Authentication
-- Firebase Email & Password Authentication
-- Splash → Login → Onboarding flow
+### 🔐 Autentikasi
+- Login & Register menggunakan Firebase Authentication
+- Alur: Splash → Login → Onboarding → Home
 
-### 🎭 Personalized Recommendation
-- Genre selection during onboarding
-- Recommended movies based on selected genres
+### 🎭 Rekomendasi Personal
+- Pemilihan genre saat onboarding
+- Rekomendasi film berdasarkan genre yang dipilih pengguna
 
-### 🎥 Movie Sections
+### 🔍 Pencarian Film
+- Fitur Search berdasarkan judul film
+- Menggunakan API TMDB
+- Hasil pencarian real-time
+
+### 🎥 Kategori Film
 - 🔥 Trending Movies
 - ⭐ Top Rated Movies
 - 🎬 Now Playing Movies
-- 📄 See All with Pagination
+- 📄 See All dengan Pagination
 - 🔄 Pull to Refresh
 
-### ❤️ Favorites
-- Add / Remove favorite movies
-- Firestore database integration
-- Real-time UI updates
-- Swipe to delete
-- Grid layout (Netflix-style)
+### ❤️ Favorit / Watchlist
+- Tambah & hapus film favorit
+- Data tersimpan di Cloud Firestore
+- Update UI secara real-time
+- Swipe untuk menghapus
+- Tampilan grid seperti Netflix
 
-### 📄 Movie Detail
-- Backdrop image
-- Rating & release date
-- Overview
-- Watch trailer (YouTube)
-- Add to favorites
+### 📄 Detail Film
+- Gambar backdrop
+- Rating & tanggal rilis
+- Sinopsis
+- Trailer (YouTube)
+- Tombol tambah ke favorit
 
 ### 🎨 UI / UX
-- Clean dark theme
-- Smooth splash animation
-- Modern rounded cards
-- Elegant horizontal carousels
+- Tema gelap modern
+- Animasi splash screen
+- Card dengan sudut rounded
+- Carousel horizontal elegan
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Teknologi yang Digunakan
 
-| Technology | Usage |
+| Teknologi | Fungsi |
 |------------|--------|
-| Flutter | UI Framework |
+| Flutter | Framework UI |
 | GetX | State Management & Routing |
-| Firebase Auth | Authentication |
+| Firebase Auth | Autentikasi |
 | Cloud Firestore | Database |
-| TMDB API | Movie Data |
-| URL Launcher | Open YouTube Trailer |
-| Flutter Dotenv | Secure API Key |
-| Shimmer | Loading Effects |
+| TMDB API | Data Film |
+| URL Launcher | Membuka Trailer |
+| Flutter Dotenv | Keamanan API Key |
+| Shimmer | Efek Loading |
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 <p align="center">
   <img src="lib/assets/Screenshot/HOME.png" width="220">
   <img src="lib/assets/Screenshot/FAVORITE.png" width="220">
   <img src="lib/assets/Screenshot/DETAIL.png" width="220">
 </p>
+
 ---
 
-## 🔐 Environment Setup
+## 🔐 Konfigurasi Environment
 
-Create a `.env` file in the root directory:
+Buat file `.env` di root project:
 
 ```
 TMDB_API_KEY=your_api_key_here
 ```
 
-Make sure `.env` is added to `.gitignore`.
+Pastikan file `.env` sudah ditambahkan ke `.gitignore`.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Cara Menjalankan
 
 ### 1️⃣ Clone Repository
 
@@ -101,18 +108,18 @@ Make sure `.env` is added to `.gitignore`.
 git clone https://github.com/IkhsanDs/flutter-movie-app.git
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Install Dependency
 
 ```
 flutter pub get
 ```
 
-### 3️⃣ Firebase Setup
+### 3️⃣ Setup Firebase
 
-- Add `google-services.json` to `android/app/`
-- Add `GoogleService-Info.plist` to `ios/Runner/`
+- Tambahkan `google-services.json` ke `android/app/`
+- Tambahkan `GoogleService-Info.plist` ke `ios/Runner/`
 
-### 4️⃣ Run App
+### 4️⃣ Jalankan Aplikasi
 
 ```
 flutter run
@@ -120,7 +127,7 @@ flutter run
 
 ---
 
-## 📂 Project Structure
+## 📂 Struktur Project
 
 ```
 lib/
@@ -140,33 +147,33 @@ lib/
 
 ---
 
-## 📈 Architecture
+## 📈 Arsitektur
 
-- Feature-based modular structure
-- GetX controller-based state management
-- Reactive UI using Obx()
-- Separation between services, modules, and UI
+- Struktur modular berbasis fitur
+- State management menggunakan GetX
+- UI reaktif dengan Obx()
+- Pemisahan service, controller, dan tampilan
 
 ---
 
-## 🔥 Roadmap
+## 🔥 Pengembangan Selanjutnya
 
-- [x] Authentication
-- [x] Genre-based Recommendation
-- [x] Favorites with Firestore
+- [x] Autentikasi
+- [x] Rekomendasi berbasis genre
+- [x] Favorit dengan Firestore
 - [x] Pagination (See All)
-- [ ] Light / Dark Mode Toggle
-- [ ] More Animations
-- [ ] App Store Release
+- [ ] Toggle Light / Dark Mode
+- [ ] Animasi tambahan
+- [ ] Publish ke Play Store
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 Ikhsan Dwi Seto
 
 ---
 
-## 📄 License
+## 📄 Lisensi
 
-This project is built for learning and portfolio purposes.
+Project ini dibuat untuk keperluan pembelajaran dan portfolio.
