@@ -156,16 +156,6 @@ lib/
 
 ---
 
-## 🔥 Pengembangan Selanjutnya
-
-- [x] Autentikasi
-- [x] Rekomendasi berbasis genre
-- [x] Favorit dengan Firestore
-- [x] Pagination (See All)
-- [ ] Toggle Light / Dark Mode
-- [ ] Animasi tambahan
-- [ ] Publish ke Play Store
-
 ---
 
 ## 👨‍💻 Developer
